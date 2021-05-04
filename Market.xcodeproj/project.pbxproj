@@ -13,9 +13,12 @@
 		C4A4BEBB25FF2B9700F45225 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A4BEB925FF2B9700F45225 /* Main.storyboard */; };
 		C4A4BEBD25FF2B9A00F45225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4A4BEBC25FF2B9A00F45225 /* Assets.xcassets */; };
 		C4A4BEC025FF2B9A00F45225 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A4BEBE25FF2B9A00F45225 /* LaunchScreen.storyboard */; };
+		CBC9D08EA535124EB86A3878 /* Pods_Market.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BCE6E70110FB4E69BFE3284 /* Pods_Market.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4BCE6E70110FB4E69BFE3284 /* Pods_Market.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Market.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2AF1584B375BDCEF1AEE416 /* Pods-Market.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Market.debug.xcconfig"; path = "Target Support Files/Pods-Market/Pods-Market.debug.xcconfig"; sourceTree = "<group>"; };
 		C4A4BEB025FF2B9700F45225 /* Market.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Market.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A4BEB325FF2B9700F45225 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4A4BEB525FF2B9700F45225 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		C4A4BEBC25FF2B9A00F45225 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4A4BEBF25FF2B9A00F45225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4A4BEC125FF2B9A00F45225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D037ECEE611BEC74464432BF /* Pods-Market.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Market.release.xcconfig"; path = "Target Support Files/Pods-Market/Pods-Market.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBC9D08EA535124EB86A3878 /* Pods_Market.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81A5A06C5E062D79A6A7967F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BCE6E70110FB4E69BFE3284 /* Pods_Market.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9BA34FBFCE150D0B1DA1EE2B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2AF1584B375BDCEF1AEE416 /* Pods-Market.debug.xcconfig */,
+				D037ECEE611BEC74464432BF /* Pods-Market.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C4A4BEA725FF2B9700F45225 = {
 			isa = PBXGroup;
 			children = (
 				C4A4BEB225FF2B9700F45225 /* Market */,
 				C4A4BEB125FF2B9700F45225 /* Products */,
+				9BA34FBFCE150D0B1DA1EE2B /* Pods */,
+				81A5A06C5E062D79A6A7967F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4A4BEC425FF2B9A00F45225 /* Build configuration list for PBXNativeTarget "Market" */;
 			buildPhases = (
+				DB716E1B2DD31F0953FACE29 /* [CP] Check Pods Manifest.lock */,
 				C4A4BEAC25FF2B9700F45225 /* Sources */,
 				C4A4BEAD25FF2B9700F45225 /* Frameworks */,
 				C4A4BEAE25FF2B9700F45225 /* Resources */,
+				62F6EC40EB4E24E6357AE81F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62F6EC40EB4E24E6357AE81F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Market/Pods-Market-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Market/Pods-Market-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Market/Pods-Market-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB716E1B2DD31F0953FACE29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Market-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C4A4BEAC25FF2B9700F45225 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		C4A4BEC525FF2B9A00F45225 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2AF1584B375BDCEF1AEE416 /* Pods-Market.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		C4A4BEC625FF2B9A00F45225 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D037ECEE611BEC74464432BF /* Pods-Market.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
